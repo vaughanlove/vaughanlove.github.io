@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaughan Love</title>
     <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
     <link rel="stylesheet" href="styles.css">
     <style>
     </style>
@@ -23,8 +24,8 @@
            
             <div class="about-paragraph">
                 <p>
-                    Currently building <a target="_blank" href="https://malaconnect.de/">malaconnect</a>
-                    and contributing to open-source and experimenting with applications of large 
+                    Currently @ <a target="_blank" href="https://malaconnect.de/">malaconnect</a>
+                    + contributing to open-source + experimenting with the use of large 
                     language models (LLMs) in DevOps and hospitality.
                 </p>
                 <p>
@@ -32,13 +33,13 @@
                     and software engineering.
                 </p>
                 <p>
-                    If you need a software/data/ML engineer, contact me:
-                    <h3> <a href="mailto:vaughan.e.love@gmail.com"></a>vaughan.e.love@gmail.com</h3> 
+                    If you need a software/data/ml engineer, please contact me:
+                    <h3> <a href="mailto:vaughan.e.love@gmail.com">vaughan.e.love@gmail.com</a></h3> 
                 </p>
-                <h2>
+                <h3>
                     <a target="_blank" href="https://github.com/vaughanlove"><code>GitHub</code></a>
                     <a target="_blank" href="https://www.linkedin.com/in/vaughan-love/"><code>LinkedIn</code></a>
-                </h2>
+                </h3>
                 
 
             </div>
@@ -46,36 +47,36 @@
         </div>
         
         <div class="div3">
-            <h2 class="project-title"> Previous work </h2>
+            <h2 class="project-title"> Projects </h2>
             <ul class="list">
                
-                <li class="list-element">
+                <li id="first-item" _="init repeat forever wait 2s if #first-item match .highlighted-element remove .highlighted-element from me add .list-element to me add .highlighted-element to #second-item end wait 2s end" class="highlighted-element">
                     <a class="list-title"
                     href="https://github.com/vaughanlove/PromptBreeder"
                     ><code>promptbreeder</code></a
                     >: an implementation of Google DeepMind's PromptBreeder algorithm
                      for prompt optimizing
                 </li>
-                <li class="list-element" >
+                <li id="second-item" _="init wait 4s repeat forever if #second-item match .highlighted-element remove .highlighted-element from me add .list-element to me  add .highlighted-element to #third-item end wait 2s end" class="list-element" >
                     <a  class="list-title" href="https://github.com/vaughanlove/EzServe"><code>ezserve</code></a
                     >: tableside resturaunt server built to run on a raspberry pi 
                 </li>
-                <li class="list-element">
+                <li id="third-item" _="init wait 6s repeat forever if #third-item match .highlighted-element remove .highlighted-element from me add .list-element to me  add .highlighted-element to #fourth-item end wait 2s end" class="list-element">
                     <a class="list-title" href="https://github.com/Gary-Devs/projectmanagement-forge-app"
                     ><code>inteLLM planner</code></a
                     >: a Jira-integrated application leveraging LLMs to generate project plans
                 </li>
-                <li class="list-element">
+                <li id="fourth-item" _="init wait 8s repeat forever if #fourth-item match .highlighted-element remove .highlighted-element from me add .list-element to me  add .highlighted-element to #fifth-item end wait 2s end" class="list-element">
                     <a class="list-title" href="https://github.com/vaughanlove/stoch"
                     ><code>stoch</code></a
                     >: stochastic calculus crate written in Rust 
                 </li>
-                <li class="list-element">
+                <li id="fifth-item" _="init wait 10s repeat forever if #fifth-item match .highlighted-element remove .highlighted-element from me add .list-element to me  add .highlighted-element to #sixth-item end wait 2s end" class="list-element">
                     <a class="list-title" href="https://github.com/vaughanlove/MojoDAO"
                     ><code>sui marketplace</code></a
                     >: escrow marketplace program for the sui blockchain
                 </li>
-                <li class="list-element">
+                <li id="sixth-item"  _="init wait 12s repeat forever if #sixth-item match .highlighted-element remove .highlighted-element from me add .list-element to me  add .highlighted-element to #first-item end wait 2s end" class="list-element">
                     <a class="list-title" href="https://github.com/vaughanlove/MojoDAO"
                     ><code>mojodao</code></a
                     >: subscription infrastructure for the solana blockchain
