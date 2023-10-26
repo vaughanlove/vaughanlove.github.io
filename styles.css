@@ -1,102 +1,137 @@
 @import url('https://fonts.googleapis.com/css?family=Volkhov');
-
 div {
     font-family: "Volkhov", 'Times New Roman', Times, serif;
 }
-
 .parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 100%;
 }
-
+ 
 .name {
     width: 100%;
-    text-align: center;
-    font-size: 4rem;
-}
-.personal-description { 
-    text-align: center;
-    
-}
-
-.cv-title {
-    padding: 0;
-    margin: 0;
-}
-.list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-    width: 70%;
-}
-.list-title{
-    font-size: x-large;
-}
-.list-element {
-    scale: 1;
-    background-color: #67969991;
-    padding: 1rem;    
-    margin: 0.5rem;
-    border-radius: 0.2rem;
-    width: 90%;
-    transition: scale 1s cubic-bezier(.19,.56,.56,.85); 
-}
-
-.highlighted-element  {
-    scale: 1.1;
-    background-color: #43a8afb0;
-    padding: 1rem;    
-    margin: 0.5rem;
-    border-radius: 0.2rem;
-    transition: scale 1s cubic-bezier(.19,.56,.56,.85); /* 1s delay */
-
-}
-
-.hidden-skills {
-    visibility: hidden;
-    padding: 0;
-    margin: 0;
-}
-
-
-.about-paragraph {
-    width: 70%;
-    padding-top: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 a, a:visited, a:hover, a:active {
     color: inherit;
 }
 
-.project-title{
-    text-align: center;
-}
-.rings-icon {
-    stroke: "#ff0000";
-}
-.div1 { 
-    grid-area: 1 / 1 / 4 / 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.list {
+    padding: 0;
+    list-style-type: none;
 }
 
-.div3 { 
-    grid-area: 1 / 3 / 4 / 6; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.list-element {
+    background-color: #67969991;
+    padding: 1rem;    
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+    transition: background-color 1s cubic-bezier(.19,.56,.56,.85); 
 }
 
+.highlighted-element  {
+    
+    background-color: #43a8afb0;
+    padding: 1rem;    
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+    transition: background-color 1s cubic-bezier(.19,.56,.56,.85); 
+}
+
+@media only screen and (min-width: 1280px) {
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .name {
+        width: 100%;
+        text-align: center;
+        font-size: 4rem;
+    }
+    .personal-description { 
+        text-align: center;
+        
+    }
+    
+    .cv-title {
+        padding: 0;
+        margin: 0;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        width: 70%;
+    }
+    .list-title{
+        font-size: x-large;
+    }
+    .list-element {
+        scale: 1;
+        background-color: #67969991;
+        padding: 1rem;    
+        margin: 0.5rem;
+        border-radius: 0.2rem;
+        width: 90%;
+        transition: scale 1s cubic-bezier(.19,.56,.56,.85); 
+    }
+    
+    .highlighted-element  {
+        scale: 1.1;
+        background-color: #43a8afb0;
+        padding: 1rem;    
+        margin: 0.5rem;
+        border-radius: 0.2rem;
+        transition: scale 1s cubic-bezier(.19,.56,.56,.85); 
+    }
+    
+    .hidden-skills {
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    .about-paragraph {
+        width: 70%;
+        padding-top: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-size: 1.2rem;
+    }
+    
+    .project-title{
+        text-align: center;
+    }
+    .rings-icon {
+        stroke: "#ff0000";
+    }
+    .div1 { 
+        grid-area: 1 / 1 / 4 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .div3 { 
+        grid-area: 1 / 3 / 4 / 6; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+}
 

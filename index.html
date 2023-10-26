@@ -50,7 +50,7 @@
             <h2 class="project-title"> Projects </h2>
             <ul class="list">
                
-                <li id="first-item" _="init repeat forever wait 2s if #first-item match .highlighted-element remove .highlighted-element from me add .list-element to me add .highlighted-element to #second-item end wait 2s end" class="highlighted-element">
+                <li id="first-item" _="init add .highlighted-element to me remove .list-element from me repeat forever wait 2s if #first-item match .highlighted-element remove .highlighted-element from me add .list-element to me add .highlighted-element to #second-item end wait 2s end" class="list-element">
                     <a class="list-title"
                     href="https://github.com/vaughanlove/PromptBreeder"
                     ><code>promptbreeder</code></a
