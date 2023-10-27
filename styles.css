@@ -28,7 +28,7 @@ a, a:visited, a:hover, a:active {
     padding: 1rem;    
     margin: 0.5rem;
     border-radius: 0.2rem;
-    transition: background-color 1s cubic-bezier(.19,.56,.56,.85); 
+    transition: background-color 3s cubic-bezier(.19,.56,.56,.85); 
 }
 
 .highlighted-element  {
@@ -37,7 +37,7 @@ a, a:visited, a:hover, a:active {
     padding: 1rem;    
     margin: 0.5rem;
     border-radius: 0.2rem;
-    transition: background-color 1s cubic-bezier(.19,.56,.56,.85); 
+    transition: background-color 1.5s cubic-bezier(.19,.56,.56,.85); 
 }
 
 @media only screen and (min-width: 1280px) {
@@ -82,7 +82,7 @@ a, a:visited, a:hover, a:active {
         margin: 0.5rem;
         border-radius: 0.2rem;
         width: 90%;
-        transition: scale 1s cubic-bezier(.19,.56,.56,.85); 
+        transition: scale 3s cubic-bezier(.19,.56,.56,.85); 
     }
     
     .highlighted-element  {
@@ -91,7 +91,7 @@ a, a:visited, a:hover, a:active {
         padding: 1rem;    
         margin: 0.5rem;
         border-radius: 0.2rem;
-        transition: scale 1s cubic-bezier(.19,.56,.56,.85); 
+        transition: scale 2s cubic-bezier(.19,.56,.56,.85); 
     }
     
     .hidden-skills {
