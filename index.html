@@ -7,6 +7,7 @@
     <title>Vaughan Love</title>
     <script src="https://unpkg.com/htmx.org@1.9.6"></script>
     <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+    <script src="https://unpkg.com/htmx.org/dist/ext/class-tools.js"></script>
     <link rel="stylesheet" href="styles.css">
     <style>
     </style>
@@ -21,7 +22,7 @@
             </h3>
             <div class="about-paragraph">
                 <p>
-                    Currently @ <a target="_blank" href="https://malaconnect.de/">malaconnect</a>
+                    Currently SWE @ <a target="_blank" href="https://malaconnect.de/">malaconnect</a>
                     + contributing to open-source + experimenting with the use of large 
                     language models (LLMs) in DevOps and hospitality.
                 </p>
@@ -45,35 +46,34 @@
         
         <div class="div3">
             <h2 class="project-title"> Projects </h2>
-            <ul class="list">
-               
-                <li id="first-item" _="init repeat forever wait 3s if #first-item match .highlighted-element remove .highlighted-element from me add .list-element to me add .highlighted-element to #second-item end wait 3s end" class="highlighted-element">
+            <ul class="list" hx-ext="class-tools">
+                <li id="first-element" class="list-element"  _="init repeat forever toggle .highlighted-element wait 2s toggle .highlighted-element  wait 10s end on click go to url https://github.com/vaughanlove/PromptBreeder">
                     <a class="list-title"
                     href="https://github.com/vaughanlove/PromptBreeder"
                     ><code>promptbreeder</code></a
                     >: an implementation of Google DeepMind's PromptBreeder algorithm
-                     for prompt optimizing
+                    for prompt optimizing
                 </li>
-                <li id="second-item" _="init wait 6s repeat forever if #second-item match .highlighted-element remove .highlighted-element from me add .list-element to me  add .highlighted-element to #third-item end wait 3s end" class="list-element" >
+                <li id="second-item" class="list-element" _="init wait 2s repeat forever toggle .highlighted-element wait 2s toggle .highlighted-element wait 10s end on click go to url https://github.com/vaughanlove/EzServe">
                     <a  class="list-title" href="https://github.com/vaughanlove/EzServe"><code>ezserve</code></a
                     >: tableside resturaunt server built to run on a raspberry pi 
                 </li>
-                <li id="third-item" _="init wait 9s repeat forever if #third-item match .highlighted-element remove .highlighted-element from me add .list-element to me  add .highlighted-element to #fourth-item end wait 3s end" class="list-element">
+                <li id="third-item" class="list-element" _="init wait 4s repeat forever toggle .highlighted-element wait 2s toggle .highlighted-element wait 10s end on click go to url https://github.com/Gary-Devs/projectmanagement-forge-app">
                     <a class="list-title" href="https://github.com/Gary-Devs/projectmanagement-forge-app"
                     ><code>inteLLM planner</code></a
                     >: a Jira-integrated application leveraging LLMs to generate project plans
                 </li>
-                <li id="fourth-item" _="init wait 12s repeat forever if #fourth-item match .highlighted-element remove .highlighted-element from me add .list-element to me  add .highlighted-element to #fifth-item end wait 3s end" class="list-element">
+                <li id="fourth-item" class="list-element" _="init wait 6s repeat forever toggle .highlighted-element wait 2s toggle .highlighted-element wait 10s end on click go to url https://github.com/vaughanlove/stoch">
                     <a class="list-title" href="https://github.com/vaughanlove/stoch"
                     ><code>stoch</code></a
                     >: stochastic calculus crate written in Rust 
                 </li>
-                <li id="fifth-item" _="init wait 15s repeat forever if #fifth-item match .highlighted-element remove .highlighted-element from me add .list-element to me  add .highlighted-element to #sixth-item end wait 3s end" class="list-element">
-                    <a class="list-title" href="https://github.com/vaughanlove/MojoDAO"
+                <li id="fifth-item" class="list-element" _="init wait 8s repeat forever toggle .highlighted-element wait 2s toggle .highlighted-element wait 10s end on click go to url https://github.com/vaughanlove/sui-move-marketplace">
+                    <a class="list-title" href="https://github.com/vaughanlove/sui-move-marketplace"
                     ><code>sui marketplace</code></a
                     >: escrow marketplace program for the sui blockchain
                 </li>
-                <li id="sixth-item"  _="init wait 18s repeat forever if #sixth-item match .highlighted-element remove .highlighted-element from me add .list-element to me  add .highlighted-element to #first-item end wait 3s end" class="list-element">
+                <li id="sixth-item" class="list-element" _="init wait 10s repeat forever toggle .highlighted-element wait 2s toggle .highlighted-element  wait 10s end on click go to url https://github.com/vaughanlove/MojoDAO">
                     <a class="list-title" href="https://github.com/vaughanlove/MojoDAO"
                     ><code>mojodao</code></a
                     >: subscription infrastructure for the solana blockchain

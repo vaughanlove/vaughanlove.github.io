@@ -31,6 +31,13 @@ a, a:visited, a:hover, a:active {
     transition: background-color 3s cubic-bezier(.19,.56,.56,.85); 
 }
 
+.list-element.highlight {
+    background-color: #43a8afb0;
+    padding: 1rem;    
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+}
+
 .highlighted-element  {
     
     background-color: #43a8afb0;
@@ -83,6 +90,15 @@ a, a:visited, a:hover, a:active {
         border-radius: 0.2rem;
         width: 90%;
         transition: scale 3s cubic-bezier(.19,.56,.56,.85); 
+    }
+
+    .list-element.highlight {
+        scale: 1.1;
+        background-color: #43a8afb0;
+        padding: 1rem;    
+        margin: 0.5rem;
+        border-radius: 0.2rem;
+        width: 90%;
     }
     
     .highlighted-element  {
