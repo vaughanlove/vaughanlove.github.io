@@ -1,86 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaughan Love</title>
-    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
-    <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
-    <script src="https://unpkg.com/htmx.org/dist/ext/class-tools.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="parent">
-        <div class="div1">
-            <h1 class="name"> Vaughan Love </h1>
-            <h3 class="personal-description"> Applied Math and Computer Engineer </h3>
-            <h3 class="cv-title">
-                <a class="cv-link" href="/vaughan_love_resume.pdf"><code>CV</code></a>
-            </h3>
-            <div class="about-paragraph">
-                <p>
-                    Currently SWE @ <a target="_blank" href="https://malaconnect.de/">malaconnect</a>
-                    + contributing to open-source + experimenting with the use of large 
-                    language models (LLMs) in DevOps and hospitality.
-                </p>
-                <p>
-                    Passionate about working on complex problems in data science, machine learning, 
-                    and software engineering.
-                </p>
-                <p>
-                    If you need a software/data/ml engineer, please contact me:
-                    <h3> <a href="mailto:vaughan.e.love@gmail.com">vaughan.e.love@gmail.com</a></h3> 
-                </p>
-                <h3>
-                    <a target="_blank" href="https://github.com/vaughanlove"><code>GitHub</code></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/vaughan-love/"><code>LinkedIn</code></a>
-                </h3>
-                
+<body class=" text-white min-h-screen font-mono">
+    <!-- Gradient background -->
+    <div class="fixed inset-0 bg-gradient-to-br  opacity-100"></div>
 
+    <!-- Main content -->
+    <div class="relative z-10 container  mx-auto  py-16">
+        <!-- Header section -->
+        <header class="text-center w-full items-center flex mb-16 justify-center space-y-4 " >
+            <div class="bg-white bg-opacity-5 w-fit rounded-lg backdrop-blur-sm">
+                <h1 class="text-6xl font-bold bg-clip-text text-black">
+                    Vaughan Love
+                </h1>
+                <h2 class="text-xl text-gray-900">Applied Math and Software Engineer</h2>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="/resume" class="px-4 py-2 bg-white text-blue-400 hover:text-blue-300 bg-opacity-10 rounded-lg hover:bg-opacity-20 transition-all">
+                        HTML CV
+                    </a>
+                    <a href="/Vaughan Love Resume.pdf" class="px-4 py-2 bg-white text-blue-400 hover:text-blue-300 bg-opacity-10 rounded-lg hover:bg-opacity-20 transition-all">
+                        PDF CV
+                    </a>
+                    <a href="https://github.com/vaughanlove" target="_blank" class="px-4 py-2 text-blue-400 hover:text-blue-300 bg-white bg-opacity-10 rounded-lg hover:bg-opacity-20 transition-all">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/vaughan-love/" target="_blank" class="px-4 py-2 text-blue-400 hover:text-blue-300 bg-white bg-opacity-10 rounded-lg hover:bg-opacity-20 transition-all">
+                        LinkedIn
+                    </a>
+                </div>
             </div>
-            
-        </div>
-        
-        <div class="div3">
-            <h2 class="project-title"> Projects </h2>
-            <ul class="list" hx-ext="class-tools">
-                <li id="first-element" class="list-element"  _="init repeat forever toggle .highlighted-element wait 2s toggle .highlighted-element  wait 10s end on click go to url https://github.com/vaughanlove/PromptBreeder">
-                    <a class="list-title"
-                    href="https://github.com/vaughanlove/PromptBreeder"
-                    ><code>promptbreeder</code></a
-                    >: an implementation of Google DeepMind's PromptBreeder algorithm
-                    for prompt optimizing
-                </li>
-                <li id="second-item" class="list-element" _="init wait 2s repeat forever toggle .highlighted-element wait 2s toggle .highlighted-element wait 10s end on click go to url https://github.com/vaughanlove/EzServe">
-                    <a  class="list-title" href="https://github.com/vaughanlove/EzServe"><code>ezserve</code></a
-                    >: tableside resturaunt server built to run on a raspberry pi 
-                </li>
-                <li id="third-item" class="list-element" _="init wait 4s repeat forever toggle .highlighted-element wait 2s toggle .highlighted-element wait 10s end on click go to url https://github.com/Gary-Devs/projectmanagement-forge-app">
-                    <a class="list-title" href="https://github.com/Gary-Devs/projectmanagement-forge-app"
-                    ><code>inteLLM planner</code></a
-                    >: a Jira-integrated application leveraging LLMs to generate project plans
-                </li>
-                <li id="fourth-item" class="list-element" _="init wait 6s repeat forever toggle .highlighted-element wait 2s toggle .highlighted-element wait 10s end on click go to url https://github.com/vaughanlove/stoch">
-                    <a class="list-title" href="https://github.com/vaughanlove/stoch"
-                    ><code>stoch</code></a
-                    >: stochastic calculus crate written in Rust 
-                </li>
-                <li id="fifth-item" class="list-element" _="init wait 8s repeat forever toggle .highlighted-element wait 2s toggle .highlighted-element wait 10s end on click go to url https://github.com/vaughanlove/sui-move-marketplace">
-                    <a class="list-title" href="https://github.com/vaughanlove/sui-move-marketplace"
-                    ><code>sui marketplace</code></a
-                    >: escrow marketplace program for the sui blockchain
-                </li>
-                <li id="sixth-item" class="list-element" _="init wait 10s repeat forever toggle .highlighted-element wait 2s toggle .highlighted-element  wait 10s end on click go to url https://github.com/vaughanlove/MojoDAO">
-                    <a class="list-title" href="https://github.com/vaughanlove/MojoDAO"
-                    ><code>mojodao</code></a
-                    >: subscription infrastructure for the solana blockchain
-                </li>
-            </ul>
-        </div>
-    </div>
-</body>
+           
+        </header>
 
+        <!-- About section -->
+        <section class="max-w-2xl mx-auto mb-16 space-y-6 bg-white bg-opacity-5 p-6 rounded-lg backdrop-blur-sm text-center">
+            <p class="text-lg text-left  text-gray-900">
+                Currently full-stack SWE @ <a href="https://rh2c.org/" target="_blank" class="text-blue-400 hover:text-blue-300">RH2C</a> working on the platform and building an internal annotation tool to accelerate systematic reviews using LLMs.            </p>
+            <p class="text-lg text-left text-gray-900">
+                Passionate about working on problems in cryptography, applied machine learning, and software engineering.
+            </p>
+            <div class="mt-8">
+                <p class="text-lg text-gray-900">If you need a software engineer, please contact me:</p>
+                <a href="mailto:vaughan.e.love@gmail.com" class="text-xl text-blue-400 hover:text-blue-300">vaughan.e.love@gmail.com</a>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section class="max-w-4xl mx-auto text-black">
+            <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+            <div class="grid gap-6 md:grid-cols-2">
+                <div class="bg-white bg-opacity-5 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-10 transition-all">
+                    <a href="https://github.com/vaughanlove/openvm-sudoku" target="_blank" class="text-xl text-blue-400 font-bold text-black hover:text-blue-300"> zero knowledge sudoku<span class="text-black text-sm"> January 2025</span></a>
+                    <p class="text-gray-700 mt-2"> Zero-knowledge proof of completed sudoku boards </p>
+                </div>
+                
+                <div class="bg-white bg-opacity-5 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-10 transition-all">
+                    <a href="https://x.com/crossmint/status/1853472493358690362" target="_blank" class="text-xl text-blue-400 font-bold text-black hover:text-blue-300"> BetMore <span class="text-black text-sm"> November 2024</span></a>
+                    <p class="text-gray-700 mt-2"> A bar wager app using llms and stablecoins for settlement at Rabbit Capital's Agentic Finance Hackathon in SF  </p>
+                </div>
+                <div class="bg-white bg-opacity-5 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-10 transition-all">
+                    <p class="text-xl font-bold text-black"> malaconnect <span class="text-black text-sm"> April 2024</span></a>
+                    <p class="text-gray-700 mt-2"> Founding engineer for malaconnect, a german startup for helping elderly people access care.</p>
+                </div>
+                <div class="bg-white bg-opacity-5 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-10 transition-all">
+                    <p class="text-xl font-bold text-black">pintxo<span class="text-black text-sm"> January 2024</span></p>
+                    <p class="text-gray-700 mt-2"> Founding engineer. API to allow developers to execute blockchain transactions on-chain from text. </p>
+                </div>
+                <div class="bg-white bg-opacity-5 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-10 transition-all">
+                    <p class="text-xl font-bold text-black">gecover<span class="text-black text-sm"> November 2023</span></p>
+                    <p class="text-gray-700 mt-2">A cover letter generator from linkedin job posting urls </p>
+                </div>
+                <!-- Project cards -->
+                <div class="bg-white bg-opacity-5 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-10 transition-all">
+                    <a href="https://github.com/vaughanlove/PromptBreeder" target="_blank" class="text-xl font-bold text-blue-400 hover:text-blue-300">promptbreeder<span class="text-black text-sm"> October 2023</span></a>
+                    <p class="text-gray-700 mt-2">An implementation of Google DeepMind's PromptBreeder algorithm for prompt optimizing</p>
+                </div>
+
+                <div class="bg-white bg-opacity-5 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-10 transition-all">
+                    <a href="https://github.com/vaughanlove/EzServe" target="_blank" class="text-xl font-bold text-blue-400 hover:text-blue-300">ezserve<span class="text-black text-sm"> September 2023</span></a>
+                    <p class="text-gray-700 mt-2">Tableside restaurant server built to run on a raspberry pi</p>
+                </div>
+
+                <div class="bg-white bg-opacity-5 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-10 transition-all">
+                    <a href="https://github.com/Gary-Devs/projectmanagement-forge-app" target="_blank" class="text-xl font-bold text-blue-400 hover:text-blue-300">inteLLM planner<span class="text-black text-sm"> September 2023</span></a>
+                    <p class="text-gray-700 mt-2">A Jira-integrated application leveraging LLMs to generate project plans</p>
+                </div>
+
+                <div class="bg-white bg-opacity-5 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-10 transition-all">
+                    <a href="https://github.com/vaughanlove/stoch" target="_blank" class="text-xl font-bold text-blue-400 hover:text-blue-300">stoch <span class="text-black text-sm"> June 2023</span></a>
+                    <p class="text-gray-700 mt-2">Stochastic calculus crate written in Rust</p>
+                </div>
+
+                <div class="bg-white bg-opacity-5 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-10 transition-all">
+                    <a href="https://github.com/vaughanlove/sui-move-marketplace" target="_blank" class="text-xl font-bold text-blue-400 hover:text-blue-300">sui marketplace <span class="text-black text-sm"> July 2022</span></a>
+                    <p class="text-gray-700 mt-2">Escrow marketplace program for the sui blockchain</p>
+                </div>
+
+                <div class="bg-white bg-opacity-5 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-10 transition-all">
+                    <a href="https://github.com/vaughanlove/MojoDAO" target="_blank" class="text-xl font-bold text-blue-400 hover:text-blue-300">mojodao <span class="text-black text-sm"> August 2021</span></a>
+                     
+                    <p class="text-gray-700 mt-2">Subscription infrastructure for the solana blockchain.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Three.js background animation
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+        renderer.domElement.style.position = 'fixed';
+        renderer.domElement.style.top = '0';
+        renderer.domElement.style.left = '0';
+        renderer.domElement.style.zIndex = '1';
+
+        // Create particles
+        const geometry = new THREE.BufferGeometry();
+        const vertices = [];
+        for (let i = 0; i < 30000; i++) {
+            vertices.push(
+                Math.random() * 2000 - 1000,
+                Math.random() * 2000 - 1000,
+                Math.random() * 2000 - 1000
+            );
+        }
+        geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
+        const material = new THREE.PointsMaterial({ color: 0x324d4d, size: 2, transparent: true, opacity: 0.5 });
+        const points = new THREE.Points(geometry, material);
+        scene.add(points);
+
+        camera.position.z = 750;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            points.rotation.x += 0.0003;
+            points.rotation.y += 0.00025;
+            renderer.render(scene, camera);
+        }
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        animate();
+    </script>
+</body>
 </html>

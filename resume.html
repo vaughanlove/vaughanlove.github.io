@@ -1,122 +1,240 @@
-<div> VAUGHAN LOVE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaughan Love - Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
 
-    vaughan.e.love@gmail.com
-    403-973-2236
-    linkedin.com/in/vaughan-love
-    Calgary Alberta Canada (willing to relocate)
-    
-    Summary
-    ======
-    New graduate with a bachelor's degree in Applied Math and Computer Engineering from Queen's University. Passionate about working on complex problems in data science, machine learning, and software engineering.Currently at malaconnect, contributing to open-source, and experimenting with the use of large language models in DevOps and hospitality.
-    
-    
-    Experience
-    ======
-    Software Engineer
-    malaconnect
-    04/ - Ongoing
-    malaconnect.de
-    Full-stack development. www.malaconnect.de. Using K8s, Docker, Nginx, React, Next, Flask.
-    
-    Quantitative Analyst
-    Feta Markets
-    05/2022 - 10/2022
-    Remote
-    Used python to mitigate platform risk by back-testing different options writing strategies.
-    
-    Junior Data Analyst
-    Global Predictions Inc
-    06/2021 - 01/2022
-    San Francisco California United States
-    Performed data analysis of macroeconomic relationships and provided insight for the creation of the second iteration of Global Prediction's Knowledge Graph.
-     - Used Python extensively for data analysis and helped algorithmically create over 10k relationships for the knowledge graph.
-    
-    Undergraduate Researcher
-    University of Calgary
-    05/2021 - 08/2021
-    Calgary Alberta Canada
-    Used the Kinarm exoskeleton to research the impact vision has on the recovery of proprioception within stroke patients.
-    
-    Aerator
-    Green Drop
-    05/2020 - 07/2020
-    Calgary Alberta Canada
-    Responsible for servicing around ~20 yards a day and maintaining strict deadlines.
-    
-    
-    Education
-    ======
-    BASc in Applied Mathematics Engineering
-    Queen's University
-    09/2019 - 04/2023
-    Kingston Ontario Canada
-    
-    
-    ACTIVITIES
-    ======
-    Personal Projects
-    2019 - Ongoing
-    vaughanlove.github.io
-    Been programming ideas that interest me since 2019. An overview of the best ones are available on my GitHub or website.
-    
-    Square x Google Hackathon
-    09/2023 - 10/2023
-    Built a LLM-powered tableside server. Designed to run on a raspberry pi. Repo @ github.com/vaughanlove/EzServe.
-    
-    Breakpoint Global Fellow
-    11/2021
-    Lisbon, Portugal
-    Developed subscription infrastructure for the Solana developer ecosystem and was one of thirty candidates sponsored to travel to Solana Breakpoint in Lisbon.
-    
-    Tech Lead
-    08/2020 - 03/2021
-    Kingston, ON
-    Developed NotifAI, an AI-powered application for notification management. Presented at the Canadian Undergraduate Conference on Artificial Intelligence.
-    
-    
-    Skills
-    ======
-     - Creativity
-     - Adaptability
-     - Leadership
-     - Critical thinking
-     - Receptive
-     - Communication
-     - Multitasking
-     - Nginx
-     - Flask
-    
-     - Python
-     - Unix
-     - Rust
-     - TypeScript
-     - React
-     - Vue
-     - Node
-     - MATLAB
-     - Statistics
-     - Kubernetes
-     - Docker
-     - Unix
-     - Next
-    
-     - Tensorflow
-     - Pytorch
-     - TFX
-    
-    
-    Training / Courses
-    ======
-    Machine Learning Engineering for Production (MLOps) Specialization
-    Coursera
-    
-    Deploying Machine Learning Models in Production
-    Coursera
-    
-    Machine Learning Data Lifecycle in Production
-    Coursera
-    
-    Machine Learning Modeling Pipelines in Production
-    Coursera
-    
-     </div>
+        body {
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            margin: 25px 0 15px 0;
+            padding-bottom: 5px;
+        }
+
+        .job {
+            margin-bottom: 20px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: -15px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: #f0f2f5;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vaughan Love</h1>
+        <p class="contact-info">
+            Calgary, AB | +1 403-973-2236 | 
+            <a href="mailto:vaughan.e.love@gmail.com">vaughan.e.love@gmail.com</a> | 
+            <a href="https://github.com/vaughanlove">github.com/vaughanlove</a> 
+        </p>
+    </header>
+
+    <section>
+        <h2>Objective</h2>
+        <p>To obtain a challenging software engineering role where I can collaborate within a motivated and talented team. Open to relocation and/or remote work.</p>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Software Engineer (Full Stack) | Centre for Health Informatics</span>
+                <span>01/2024 - Present</span>
+            </div>
+            <p>Calgary, Alberta</p>
+            <ul>
+                <li>Independently developed and maintained rh2c.org, a global refugee health app. Frontend developed with Remix and React (TypeScript), hosted on Azure. Backend and authentication with Postgres.</li>
+                <li>Created novel AI system for validated automated systematic reviews. Reduced man-hours by 75% on 100+ hour projects. Trained and deployed healthcare models using PyTorch for clinical use.</li>
+                <li>Interfaced directly with non-technical teams (internal, independent research teams, World Health Organization) to build the product from ideation to deployment. Weekly collaboration with stakeholders to establish goals, inputs, timelines, and coordination.</li>
+                <li>Solved complex problems designing a robust and secure data pipeline using advanced database design (postgres triggers/functions, row-level security, role-based access, sql).</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Quantitative Developer | Feta Markets</span>
+                <span>05/2022 - 10/2022</span>
+            </div>
+            <p>Remote</p>
+            <ul>
+                <li>Cleaned and preprocessed hundreds of millions of rows of data using pandas (Python).</li>
+                <li>Back-tested different options writing strategies to mitigate platform risk.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Junior Data Analyst | Global Predictions</span>
+                <span>06/2021 - 01/2022</span>
+            </div>
+            <p>San Francisco</p>
+            <ul>
+                <li>Programmatic data analysis of a massive set of macroeconomic features using Python.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Undergraduate Researcher | University of Calgary</span>
+                <span>05/2021 - 05/2021</span>
+            </div>
+            <p>Calgary, Alberta</p>
+            <ul>
+                <li>Used the KINARM exoskeleton to collect data and research the impact vision has on the recovery of proprioception in stroke patients. Analysis in MATLAB and Python.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <p><strong>Queen's University</strong>, BASc Applied Mathematics Engineering</p>
+        <p>Major: Applied Mathematics | Minor: Computing</p>
+    </section>
+
+    <section>
+        <h2>Activities</h2>
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Personal Projects</span>
+                <span>2019 - Present</span>
+            </div>
+            <p><a href="https://vaughanlove.github.io">Available at vaughanlove.github.io</a></p>
+            <ul>
+                <li>Enthusiastic about trying new technologies from zkDSLs to web development.</li>
+                <li>Zero Knowledge Sudoku – project, prove a board is complete without exposing the user's input. (Jan 2025)</li>
+                <li>BetMore – rabbit capital hackathon, wager app for trivia questions using LLMs and stablecoins. (Nov 2024)</li>
+                <li>malaconnect – founding engineer, healthcare navigation for elders. (Apr 2024)</li>
+                <li>pintxo – founding engineer, API for developers to execute on-chain functions from language. (Feb 2024)</li>
+                <li>gecover – hackathon, a cover letter generator from LinkedIn URLs. (Nov 2023)</li>
+                <li>promptbreeder – project, google deepmind prompt optimization paper implemented in python. Used by Cambridge researchers. (Oct 2023)</li>
+                <li>ezserve – hackathon, embedded AI tableside restaurant waiter built to run on a Raspberry Pi. (Sep 2023)</li>
+                <li>sui marketplace – project, escrow marketplace program for the sui blockchain (Jul 2022)</li>
+                <li>mojodao – project, subscription program for the Solana blockchain. (Aug 2021)</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Breakpoint Global Fellow</span>
+                <span>11/2021</span>
+            </div>
+            <ul>
+                <li>Developed subscription infrastructure for the Solana developer ecosystem and was sponsored to attend breakpoint 2021.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Tech Lead</span>
+                <span>08/2020 - 03/2021</span>
+            </div>
+            <ul>
+                <li>Developed NOTIFAI, an AI notification manager while in QMIND. Presented nationally at CUCAI.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills & Abilities</h2>
+        <div class="skills">
+            <span class="skill">Remix</span>
+            <span class="skill">nginx</span>
+            <span class="skill">Critical Thinking</span>
+            <span class="skill">Leadership</span>
+            <span class="skill">Communication</span>
+            <span class="skill">React</span>
+            <span class="skill">Flask</span>
+            <span class="skill">NextJS</span>
+            <span class="skill">Python</span>
+            <span class="skill">MATLAB</span>
+            <span class="skill">Docker</span>
+            <span class="skill">AWS</span>
+            <span class="skill">Azure</span>
+            <span class="skill">Let's Encrypt</span>
+            <span class="skill">Language Models</span>
+            <span class="skill">FastAPI</span>
+            <span class="skill">Rust</span>
+            <span class="skill">Cloud Computing</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">TypeScript</span>
+        </div>
+    </section>
+</body>
+</html>
