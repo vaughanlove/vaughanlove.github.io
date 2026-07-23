@@ -100,7 +100,7 @@ Founding/full-stack engineer who ships production AI products end-to-end, from G
   [*Currently:* Sigil, a consent layer to facilitate moving health records P2P while staying compliant.],
   [#link("https://github.com/vaughanlove/stsr")[strongly typed symbolic regression] — project. *Jul 2025*],
   [#link("https://github.com/vaughanlove/zk-sudoku")[Zero Knowledge Sudoku] — project, prove a board is complete without exposing the user's input. *Jan 2025*],
-  [#link("https://www.linkedin.com/posts/crossmint-io_a-glimpse-into-the-future-of-ai-agents-activity-7259244986221621248-hQoE")[BetMore] — rabbit capital hackathon, wager app for trivia questions using LLMs and stablecoins. *Nov 2024*],
+  [#link("https://vaughan.love/betmore.html")[BetMore] — rabbit capital hackathon, wager app for trivia questions using LLMs and stablecoins. *Nov 2024*],
   [#link("https://www.youtube.com/watch?v=j5EfYJh91fI")[malaconnect] — founding engineer, healthcare navigation for elders. *Apr 2024*],
   [pintxo — founding engineer, API for developers to execute on-chain functions from language. *Feb 2024*],
   [gecover — hackathon, a cover letter generator from LinkedIn URLs. *Nov 2023*],
