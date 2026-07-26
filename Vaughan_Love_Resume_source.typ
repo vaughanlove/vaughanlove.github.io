@@ -44,7 +44,7 @@
 
 // ---- Objective ----
 #section("Objective")
-Founding/full-stack engineer who ships production AI products end-to-end, from GPU infra to frontend.
+Full-stack engineer who ships production AI products end-to-end, GPU infra to UX design.
 
 // ---- Experience ----
 #section("Experience")
@@ -57,8 +57,8 @@ Founding/full-stack engineer who ships production AI products end-to-end, from G
 
 #entry("Software Engineer (Full Stack)", link("https://cumming.ucalgary.ca/centres/centre-health-informatics")[Centre for Health Informatics], "Calgary, Alberta", "01/2024 – Present")
 #bullets(
-  [Built the software platform that anchored a successful \$1M+ CAD grant application; contributed to and managed the technical budget.],
-  [Created #link("https://recens.app")[recens.app], a qualitative research platform for AI-assisted policy document review with a strong design emphasis on human-in-the-loop. Reduced man-hours by 60% compared to legacy platforms, saving an estimated \$8–11K CAD per review. Self-hosted GPUs for document OCR and LLM hosting.],
+  [Built software platforms that helped anchor a successful \$1M+ CAD in grants; contributed to and managed the technical budgets.],
+  [Created #link("https://recens.app")[recens.app], a qualitative research platform for AI-assisted policy document review with a strong design emphasis on human-in-the-loop. Wrote a manuscript (in review) demonstrating reduced man-hours by 60% compared to legacy platforms, saving an estimated \$8–11K CAD per review. Self-hosted GPUs for document OCR and LLM hosting.],
   [Developed and maintained #link("https://atlas.mh2c.org")[atlas.mh2c.org], a global refugee health app. Frontend developed with Remix and React (TypeScript), hosted on Azure. Postgres backend.],
   [Interfaced directly with non-technical teams (internal, independent research teams, World Health Organization) to build products from ideation to deployment. Weekly collaboration with stakeholders to establish design, functionality, and timelines.],
   [Orchestrated external technical consultants to develop #link("https://mh2c.org")[mh2c.org].],
