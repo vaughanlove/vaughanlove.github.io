@@ -35,7 +35,7 @@
   #v(2pt)
   #text(size: 9pt)[
     London, England #h(4pt)|#h(4pt)
-    #link("mailto:vaughan.e.love@gmail.com")[vaughan.e.love\@gmail.com] #h(4pt)|#h(4pt)
+    #link("mailto:vaughanelove@pm.me")[vaughanelove\@pm.me] #h(4pt)|#h(4pt)
     #link("https://github.com/vaughanlove")[https://github.com/vaughanlove] #h(4pt)|#h(4pt)
     #link("https://www.linkedin.com/in/vaughan-love/")[https://www.linkedin.com/in/vaughan-love/] #h(4pt)|#h(4pt)
     #link("https://vaughan.love/")[vaughan.love]
