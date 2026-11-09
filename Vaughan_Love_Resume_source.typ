@@ -1,10 +1,10 @@
-#set document(title: "Vaughan Love — Resume", author: "Vaughan Love")
+#set document(title: "Vaughan Love Resume", author: "Vaughan Love")
 #set page(
   paper: "us-letter",
-  margin: (x: 1.5cm, y: 1.4cm),
+  margin: (x: 1.5cm, y: 0.5cm),
 )
-#set text(font: "Liberation Sans", size: 9.5pt, fill: rgb("#222222"))
-#set par(justify: false, leading: 0.55em)
+#set text(font: "Liberation Sans", size: 9.15pt, fill: rgb("#222222"))
+#set par(justify: false, leading: 0.47em)
 #show link: it => underline(it)
 
 // ---- Helpers ----
@@ -44,27 +44,34 @@
 
 // ---- Objective ----
 #section("Objective")
-Full-stack engineer who ships production AI products end-to-end, GPU infra to UX design.
+Full-stack engineer who builds and ships production AI products end-to-end.
 
 // ---- Experience ----
 #section("Experience")
 
-#entry("Founding Engineer", link("https://www.acuity-technologies.com/")[Acuity Technologies], "Cambridge, UK", "02/2026 – Present")
+#entry("Systems Engineer", link("https://www.regenold.com/")[regenold]  + " via " +  link("https://plainviewtechnologies.com")[Plainview Technologies], "London, UK", "09/2026 – Present")
 #bullets(
-  [Collaborate directly with a cross-disciplinary team to design and implement novel biotech workflows integrating AI.],
-  [Ownership across the entire stack.],
+  [Leading the cloud buildout to modernize regenold's operations and bring secure AI applications and workflows to their client work, designed to support GDPR, GxP, ISO 27001, EU Data Act, and EU AI Act requirements.],
+  [Expanding their existing Entra setup for identity to support secure cloud data access and downstream applications.],
+  [Building with Azure Functions, Microsoft Graph API (delegated permissions), Microsoft 365, Foundry IQ, and Bicep IaC.],
 )
 
-#entry("Software Engineer (Full Stack)", link("https://cumming.ucalgary.ca/centres/centre-health-informatics")[Centre for Health Informatics], "Calgary, Alberta", "01/2024 – Present")
+#entry("Founding Engineer", link("https://www.acuity-technologies.com/")[Acuity Technologies]+ " via " + link("https://plainviewtechnologies.com")[Plainview Technologies], "Cambridge, UK", "02/2026 – 09/2026")
+#bullets(
+  [First engineer, working under the scientific direction of David Rubinsztein, in day-to-day collaboration with a couple of postdocs from his lab. Translated researcher ideas into tools and workflows that the postdocs could use to further aid discovery.],
+  [Delivered bioinformatic workflows for target discovery, including large-scale knowledge extraction across hundreds of thousands of scientific manuscripts.],
+  [Built the stack: TanStack, Postgres, Logfire, Anthropic, Restate Durable Execution.]
+)
+
+#entry("Software Engineer (Full Stack)", link("https://cumming.ucalgary.ca/centres/centre-health-informatics")[Centre for Health Informatics], "Calgary, Alberta", "01/2024 – 02/2026")
 #bullets(
   [Built software platforms that helped anchor a successful \$1M+ CAD in grants; contributed to and managed the technical budgets.],
-  [Created #link("https://recens.app")[recens.app], a qualitative research platform for AI-assisted policy document review with a strong design emphasis on human-in-the-loop. Wrote a manuscript (in review) demonstrating reduced man-hours by 60% compared to legacy platforms, saving an estimated \$8–11K CAD per review. Self-hosted GPUs for document OCR and LLM hosting.],
+  [Created #link("https://recens.app")[recens.app], a qualitative research platform for AI-assisted policy document review with a strong design emphasis on human-in-the-loop. Created an eval and observed reduced man-hours by 60% compared to legacy platforms, saving an estimated \$8–11K CAD per review. Self-hosted GPUs for document OCR and LLM hosting, PlanetScale DB, Railway Hosting.],
   [Developed and maintained #link("https://atlas.mh2c.org")[atlas.mh2c.org], a global refugee health app. Frontend developed with Remix and React (TypeScript), hosted on Azure. Postgres backend.],
-  [Interfaced directly with non-technical teams (internal, independent research teams, World Health Organization) to build products from ideation to deployment. Weekly collaboration with stakeholders to establish design, functionality, and timelines.],
-  [Orchestrated external technical consultants to develop #link("https://mh2c.org")[mh2c.org].],
+  [Interfaced directly with non-technical teams (independent research teams, World Health Organization) to build applications from ideation to deployment.  Orchestrated external technical consultants to develop #link("https://mh2c.org")[mh2c.org]. Hosted on Cloudflare.],
 )
 
-#entry("Quantitative Developer", "Feta Markets", "Remote", "05/2022 – 10/2022")
+#entry("Quantitative Developer", "Stealth", "Remote", "05/2022 – 10/2022")
 #bullets(
   [Cleaned and preprocessed hundreds of millions of rows of data using pandas (Python).],
   [Back-tested different options writing strategies to mitigate platform risk.],
@@ -93,21 +100,21 @@ Full-stack engineer who ships production AI products end-to-end, GPU infra to UX
 #grid(
   columns: (1fr, auto),
   align: (left, right),
-  [#text(weight: "bold")[Personal Projects] — all available at #link("https://github.com/vaughanlove")[github.com/vaughanlove]],
+  [#text(weight: "bold")[Personal Projects] - see all at #link("https://vaughan.love")[vaughan.love]],
   [#text(fill: rgb("#555555"))[2019 – Present]],
 )
 #v(3pt)
 #bullets(
-  [*Currently:* Sigil, a consent layer to facilitate moving health records P2P while staying compliant.],
-  [#link("https://github.com/vaughanlove/stsr")[strongly typed symbolic regression] — project. *Jul 2025*],
-  [#link("https://github.com/vaughanlove/zk-sudoku")[Zero Knowledge Sudoku] — project, prove a board is complete without exposing the user's input. *Jan 2025*],
-  [#link("https://vaughan.love/betmore.html")[BetMore] — rabbit capital hackathon, wager app for trivia questions using LLMs and stablecoins. *Nov 2024*],
-  [#link("https://www.youtube.com/watch?v=j5EfYJh91fI")[malaconnect] — founding engineer, healthcare navigation for elders. *Apr 2024*],
-  [pintxo — founding engineer, API for developers to execute on-chain functions from language. *Feb 2024*],
-  [gecover — hackathon, a cover letter generator from LinkedIn URLs. *Nov 2023*],
-  [#link("https://github.com/vaughanlove/promptbreeder")[promptbreeder] — project, google deepmind prompt optimization paper implemented in python. Used by Cambridge researchers. *Oct 2023*],
-  [#link("https://www.youtube.com/watch?v=wVjsfjDe14o")[ezserve] — Square + Google hackathon, embedded AI tableside restaurant waiter built to run on a Raspberry Pi. *Sep 2023*],
-  [#link("https://github.com/vaughanlove/MojoDAO")[mojodao] — project, subscription program for the Solana blockchain. *Aug 2021*],
+//   [#link("https://github.com/vaughanlove/stsr")[strongly typed symbolic regression] — project. *Jul 2025*],
+//   [#link("https://github.com/vaughanlove/zk-sudoku")[Zero Knowledge Sudoku] — project, prove a board is complete without exposing the user's input. *Jan 2025*],
+  [#link("https://barter.computer")[barter.computer] - Live agent negotiation protocol with TLSNotary price proofs. *Nov 2026*],
+  [#link("https://www.linkedin.com/posts/crossmint-io_a-glimpse-into-the-future-of-ai-agents-activity-7259244986221621248-hQoE")[Gentleman's Agreement] - Winning team, Hacking for Agentic Finance: AI settles USDC wagers. *Nov 2024*],
+  [#link("https://github.com/vaughanlove/promptbreeder")[PromptBreeder] - 190 GitHub stars; DeepMind implementation used by Cambridge researchers. *Oct 2023*],
+//   [#link("https://www.youtube.com/watch?v=j5EfYJh91fI")[malaconnect] — founding engineer, healthcare navigation for elders. *Apr 2024*],
+//   [pintxo — founding engineer, API for developers to execute on-chain functions from language. *Feb 2024*],
+//   [gecover — hackathon, a cover letter generator from LinkedIn URLs. *Nov 2023*],
+  // [#link("https://www.youtube.com/watch?v=wVjsfjDe14o")[ezserve] — Square + Google hackathon, embedded AI tableside restaurant waiter built to run on a Raspberry Pi. *Sep 2023*],
+//   [#link("https://github.com/vaughanlove/MojoDAO")[mojodao] — project, subscription program for the Solana blockchain. *Aug 2021*],
 )
 
 #grid(
@@ -135,8 +142,6 @@ Full-stack engineer who ships production AI products end-to-end, GPU infra to UX
 // ---- Skills ----
 #section("Skills & Abilities")
 #block(above: 4pt)[
-  *Languages:* Python, TypeScript, JavaScript, Rust \
-  *Frameworks:* React, TanStack, Remix, Flask, FastAPI, Pydantic \
-  *Infrastructure & Tools:* Docker, AWS, Azure, Cloudflare, Railway, PlanetScale, Postgres, Redis, vLLM \
-  *AI/ML:* Language models, OCR, self-hosted GPU inference, pgvector
+  *Languages:* Python, TypeScript, JavaScript, Rust #h(6pt)|#h(6pt) *Frameworks:* React, TanStack, Remix, Flask, FastAPI, Pydantic \
+  *Infrastructure & AI/ML:* Docker, AWS, Azure, Azure Functions, Microsoft Entra, Microsoft 365, Microsoft Graph API, Foundry IQ, Bicep, Cloudflare, Railway, PlanetScale, Postgres, Redis, Restate, Logfire, vLLM, Anthropic API, language models, OCR, self-hosted GPU inference, pgvector
 ]
