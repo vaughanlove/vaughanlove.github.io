@@ -108,7 +108,7 @@ Full-stack engineer who builds and ships production AI products end-to-end.
 //   [#link("https://github.com/vaughanlove/stsr")[strongly typed symbolic regression] — project. *Jul 2025*],
 //   [#link("https://github.com/vaughanlove/zk-sudoku")[Zero Knowledge Sudoku] — project, prove a board is complete without exposing the user's input. *Jan 2025*],
   [#link("https://barter.computer")[barter.computer] - Live agent negotiation protocol with TLSNotary price proofs. *Nov 2026*],
-  [#link("https://www.linkedin.com/posts/crossmint-io_a-glimpse-into-the-future-of-ai-agents-activity-7259244986221621248-hQoE")[Gentleman's Agreement] - Winning team, Hacking for Agentic Finance: AI settles USDC wagers. *Nov 2024*],
+  [#link("https://www.linkedin.com/posts/crossmint-io_a-glimpse-into-the-future-of-ai-agents-activity-7259244986221621248-hQoE")[Gentleman's Agreement] - Specialty prize winner, Hacking for Agentic Finance (Crossmint): AI settles USDC wagers. *Nov 2024*],
   [#link("https://github.com/vaughanlove/promptbreeder")[PromptBreeder] - 190 GitHub stars; DeepMind implementation used by Cambridge researchers. *Oct 2023*],
 //   [#link("https://www.youtube.com/watch?v=j5EfYJh91fI")[malaconnect] — founding engineer, healthcare navigation for elders. *Apr 2024*],
 //   [pintxo — founding engineer, API for developers to execute on-chain functions from language. *Feb 2024*],
